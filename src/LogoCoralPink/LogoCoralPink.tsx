@@ -1,7 +1,8 @@
+// external modules
 /** @jsx jsx */
 import { jsx, css } from '@emotion/core';
 
-export type LogoProps = {
+type LogoProps = {
   /** 로고 이미지 props */
   logo: string;
 };

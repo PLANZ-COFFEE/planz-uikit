@@ -1,9 +1,12 @@
+// external modules
 /** @jsx jsx */
 import { jsx } from '@emotion/core';
-import LogoCoralPink from './LogoCoralPink';
 import { text, withKnobs } from '@storybook/addon-knobs';
 
-import coralPinkLogo from './planz_logo_coral_pink.png';
+// internal moduls
+import LogoCoralPink from './LogoCoralPink';
+// import coralPinkLogo from './planz_logo_coral_pink.png';
+import coralPinkLogo from '@/LogoCoralPink/planz_logo_coral_pink.png';
 
 export default {
   title: 'components|LogoCoralPink',
