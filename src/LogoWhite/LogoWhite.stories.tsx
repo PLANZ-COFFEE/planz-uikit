@@ -1,6 +1,9 @@
+// external modules
 import React from 'react';
-import LogoWhite from './LogoWhite';
 import { text, withKnobs } from '@storybook/addon-knobs';
+
+// internal modules
+import LogoWhite from './LogoWhite';
 
 export default {
   title: 'LogoWhite',

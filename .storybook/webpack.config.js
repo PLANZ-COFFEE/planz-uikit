@@ -1,4 +1,9 @@
+const path = require('path');
+
 module.exports = ({ config, mode }) => {
+  config.resolve.alias = {
+    "@": path.resolve(__dirname, "../resources")
+  },
   config.module.rules.push({
     test: /\.(ts|tsx)$/,
     use: [
