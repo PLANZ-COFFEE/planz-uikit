@@ -5,7 +5,7 @@ import { text, withKnobs } from '@storybook/addon-knobs';
 
 // internal modules
 import LogoCoralPink from './LogoCoralPink';
-import coralPinkLogo from '@/planz_logo_coral_pink.png';
+import coralPinkLogo from '@/img/planz_logo_coral_pink.png';
 
 export default {
   title: 'components|LogoCoralPink',
