@@ -1,10 +1,6 @@
 const path = require('path');
 
 module.exports = ({ config, mode }) => {
-  const alias = {
-    '@': path.resolve(__dirname, '../resources'),
-  };
-
   config.module.rules.push({
     test: /\.(ts|tsx)$/,
     use: [
@@ -35,8 +31,10 @@ module.exports = ({ config, mode }) => {
       require.resolve('react-docgen-typescript-loader'),
     ],
   });
+  config.resolve.alias = {
+    '@': path.resolve(__dirname, '../resources'),
+  };
   config.resolve.extensions.push('.ts', '.tsx');
-  config.resolve.alias = alias;
 
   return config;
 };
