@@ -2,8 +2,8 @@
 /** @jsx jsx */
 import { jsx, css } from '@emotion/core';
 
+/** 로고 이미지 props */
 type LogoProps = {
-  /** 로고 이미지 props */
   logo: string;
 };
 
