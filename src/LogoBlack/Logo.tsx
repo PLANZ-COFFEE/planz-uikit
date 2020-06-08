@@ -1,9 +1,12 @@
+// 외부 모듈
 /**@jsx jsx */
-import React from 'react';
 import { jsx, css } from '@emotion/core';
 
+// 내부 모듈
+import LogoPng from '@/LogoBlack/images/Logo.png';
+
 const Logo = () => {
-  return <img css={logoImg} src={require('./images/Logo.png')} alt="logo" />;
+  return <img css={logoImg} src={LogoPng} alt="logo" />;
 };
 
 const logoImg = css`

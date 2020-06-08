@@ -1,5 +1,5 @@
 {
-  "name": "planz-uikit",
+  "name": "planz-logo",
   "version": "1.1.0",
   "description": "",
   "module": "dist/index.js",
@@ -7,9 +7,9 @@
   "files": [
     "/dist"
   ],
-  "repository": "https://github.com/planzcoffee/planz-uikit.git",
+  "repository": "https://github.com/ahnytae/planz-uikit.git",
   "keywords": [],
-  "author": "",
+  "author": "ahnytae",
   "license": "MIT",
   "dependencies": {},
   "devDependencies": {
@@ -72,5 +72,7 @@
     "*.{js,ts,tsx}": [
       "eslint --fix"
     ]
-  }
+  },
+  "main": "index.ts",
+  "private": false
 }

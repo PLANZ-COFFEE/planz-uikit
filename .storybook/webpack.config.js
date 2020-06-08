@@ -1,6 +1,23 @@
+const path = require('path');
+
+
+// module.exports = {
+//   resolve: {
+//     alias: {	  
+//       // LogoB: path.resolve(__dirname, 'src/LogoBlack/'),
+//       '@': path.resolve(__dirname, 'src')
+//     },
+//     extensions: ['.ts', '.tsx', '.js', '.json'],
+//     },
+// }
+
 module.exports = ({ config, mode }) => {
+  config.resolve.alias = {
+    "@": path.resolve(__dirname, "../src")
+  },
   config.module.rules.push({
     test: /\.(ts|tsx)$/,
+    
     use: [
       {
         loader: require.resolve("babel-loader"),
