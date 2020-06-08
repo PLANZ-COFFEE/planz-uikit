@@ -1,6 +1,6 @@
 {
-  "name": "planz-logo",
-  "version": "1.1.0",
+  "name": "planz-uikit",
+  "version": "1.2.1",
   "description": "",
   "module": "dist/index.js",
   "types": "dist/types/index.d.ts",

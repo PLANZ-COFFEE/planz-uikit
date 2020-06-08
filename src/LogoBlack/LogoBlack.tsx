@@ -3,9 +3,9 @@
 import { jsx, css } from '@emotion/core';
 
 // 내부 모듈
-import LogoPng from '@/LogoBlack/images/Logo.png';
+import LogoPng from '@/img/logo_black.png';
 
-const Logo = () => {
+const LogoBlack = () => {
   return <img css={logoImg} src={LogoPng} alt="logo" />;
 };
 
@@ -13,4 +13,4 @@ const logoImg = css`
   max-width: 300px;
 `;
 
-export default Logo;
+export default LogoBlack;

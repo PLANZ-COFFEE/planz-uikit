@@ -1,6 +1,9 @@
+// external modules
 /** @jsx jsx */
 import { jsx, css } from '@emotion/core';
-import logoImg from './image/logo_white.png';
+
+// internal modules
+import logoImg from '@/img/logo_white.png';
 
 export type LogoWhiteProps = {
   name: string;

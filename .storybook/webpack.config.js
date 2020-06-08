@@ -1,36 +1,24 @@
 const path = require('path');
 
-
-// module.exports = {
-//   resolve: {
-//     alias: {	  
-//       // LogoB: path.resolve(__dirname, 'src/LogoBlack/'),
-//       '@': path.resolve(__dirname, 'src')
-//     },
-//     extensions: ['.ts', '.tsx', '.js', '.json'],
-//     },
-// }
-
 module.exports = ({ config, mode }) => {
   config.resolve.alias = {
-    "@": path.resolve(__dirname, "../src")
-  },
+    '@': path.resolve(__dirname, '../resources'),
+  };
   config.module.rules.push({
     test: /\.(ts|tsx)$/,
     
     use: [
       {
-        loader: require.resolve("babel-loader"),
+        loader: require.resolve('babel-loader'),
         options: {
-          presets: [["react-app", { flow: false, typescript: true }]],
+          presets: [['react-app', { flow: false, typescript: true }]],
           plugins: [
             [
-              require.resolve("babel-plugin-named-asset-import"),
+              require.resolve('babel-plugin-named-asset-import'),
               {
                 loaderMap: {
                   svg: {
-                    ReactComponent:
-                      "@svgr/webpack?-svgo,+titleProp,+ref![path]",
+                    ReactComponent: '@svgr/webpack?-svgo,+titleProp,+ref![path]',
                   },
                 },
               },
@@ -39,14 +27,15 @@ module.exports = ({ config, mode }) => {
         },
       },
       {
-        loader: require.resolve("babel-loader"),
+        loader: require.resolve('babel-loader'),
         options: {
-          presets: [["react-app", { flow: false, typescript: true }]],
+          presets: [['react-app', { flow: false, typescript: true }]],
         },
       },
-      require.resolve("react-docgen-typescript-loader"),
+      require.resolve('react-docgen-typescript-loader'),
     ],
   });
-  config.resolve.extensions.push(".ts", ".tsx");
+  config.resolve.extensions.push('.ts', '.tsx');
+
   return config;
 };
