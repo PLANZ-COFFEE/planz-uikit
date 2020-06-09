@@ -4,15 +4,16 @@ import { text, withKnobs } from '@storybook/addon-knobs';
 
 // internal modules
 import LogoWhite from './LogoWhite';
+import logoImg from '@/img/logo_white.png';
 
 export default {
-  title: 'LogoWhite',
+  title: 'components|LogoWhite',
   component: LogoWhite,
   decorators: [withKnobs],
 };
 
 export const logoWhite = () => {
-  const name = text('name', 'LogoWhite');
+  const logo = text('logo', logoImg);
 
-  return <LogoWhite name={name} />;
+  return <LogoWhite logo={logo} />;
 };
