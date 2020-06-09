@@ -52,5 +52,6 @@ module.exports = {
     curly: 'error',
     'no-fallthrough': 'error',
     'padding-line-between-statements': ['error', { blankLine: 'always', prev: '*', next: 'return' }],
+    'explicit-module-boundary-types': 'off',
   },
 };

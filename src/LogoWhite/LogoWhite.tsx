@@ -10,7 +10,7 @@ export type LogoWhiteProps = {
 };
 
 /** LogoWhite 컴포넌트 */
-const LogoWhite = ({ name }: LogoWhiteProps): unknown => {
+const LogoWhite = ({ name }: LogoWhiteProps): JSX.Element => {
   return (
     <div>
       <h1>{name}</h1>

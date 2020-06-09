@@ -13,7 +13,7 @@ export default {
   decorators: [withKnobs],
 };
 
-export const coralPink = () => {
+export const coralPink = (): JSX.Element => {
   const logo = text('logo', coralPinkLogo);
 
   return <LogoCoralPink logo={logo} />;
