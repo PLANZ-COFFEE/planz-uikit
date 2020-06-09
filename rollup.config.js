@@ -6,6 +6,7 @@ import external from 'rollup-plugin-peer-deps-external';
 import svgr from '@svgr/rollup';
 import url from 'rollup-plugin-url';
 import peerDepsExternal from 'rollup-plugin-peer-deps-external';
+import image from '@rollup/plugin-image';
 
 const extensions = ['.js', '.jsx', '.ts', '.tsx'];
 
@@ -22,6 +23,7 @@ export default {
     babel({ extensions, include: ['src/**/*'], runtimeHelpers: true }),
     url(),
     svgr(),
+    image(),
   ],
   output: [
     {
