@@ -11,7 +11,7 @@ type LogoProps = {
 };
 
 /** coral pink 로고 */
-const LogoCoralPink = ({ logo }: LogoProps): unknown => {
+const LogoCoralPink: React.FunctionComponent<LogoProps> = ({ logo }: LogoProps): JSX.Element => {
   return <img src={logo} css={logoSize} />;
 };
 
