@@ -3,7 +3,7 @@ const path = require('path');
 module.exports = ({ config, mode }) => {
   config.resolve.alias = {
     '@': path.resolve(__dirname, '../resources'),
-    constants: path.resolve(__dirname, '../constants.tsx'),
+    constants: path.resolve(__dirname, '../src/common/constants.tsx'),
   };
   config.module.rules.push({
     test: /\.(ts|tsx)$/,
