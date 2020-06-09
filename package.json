@@ -7,9 +7,9 @@
   "files": [
     "/dist"
   ],
-  "repository": "https://github.com/ahnytae/planz-uikit.git",
+  "repository": "https://github.com/planzcoffee/planz-uikit.git",
   "keywords": [],
-  "author": "ahnytae",
+  "author": "",
   "license": "MIT",
   "dependencies": {},
   "devDependencies": {
@@ -73,7 +73,5 @@
     "*.{js,ts,tsx}": [
       "eslint --fix"
     ]
-  },
-  "main": "index.ts",
-  "private": false
+  }
 }
