@@ -5,12 +5,25 @@ import { jsx, css } from '@emotion/core';
 // 내부 모듈
 import LogoPng from '@/img/logo_black.png';
 
-const LogoBlack = () => {
-  return <img css={logoImg} src={LogoPng} alt="logo" />;
+type LogoBlackProps = {
+  name: string;
+  width: string;
 };
 
-const logoImg = css`
-  max-width: 300px;
-`;
+export const LogoBlack = ({ name, width }: LogoBlackProps): JSX.Element => {
+  return (
+    <div>
+      <div>{name}</div>
+      <img
+        css={css`
+          width: ${width};
+        `}
+        src={LogoPng}
+        alt="logo"
+      />
+      ;
+    </div>
+  );
+};
 
 export default LogoBlack;

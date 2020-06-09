@@ -2,18 +2,21 @@
 /** @jsx jsx */
 import { jsx, css } from '@emotion/core';
 
+// internal modules
+import { LOGO_WIDTH } from 'constants';
+
 /** 로고 이미지 props */
 type LogoProps = {
   logo: string;
 };
 
 /** coral pink 로고 */
-const LogoCoralPink = ({ logo }: LogoProps): unknown => {
+const LogoCoralPink: React.FunctionComponent<LogoProps> = ({ logo }: LogoProps): JSX.Element => {
   return <img src={logo} css={logoSize} />;
 };
 
 const logoSize = css`
-  width: 500px;
+  width: ${LOGO_WIDTH};
 `;
 
 export default LogoCoralPink;
