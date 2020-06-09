@@ -4,7 +4,7 @@ import { text, withKnobs } from '@storybook/addon-knobs';
 
 // internal modules
 import LogoWhite from './LogoWhite';
-import logoImg from '@/img/logo_white.png';
+import { LOGO_WIDTH } from 'constants';
 
 export default {
   title: 'components|LogoWhite',
@@ -12,8 +12,8 @@ export default {
   decorators: [withKnobs],
 };
 
-export const logoWhite = () => {
-  const logo = text('logo', logoImg);
+export const logoWhite = (): JSX.Element => {
+  const width = text('width', LOGO_WIDTH);
 
-  return <LogoWhite logo={logo} />;
+  return <LogoWhite width={width} />;
 };
