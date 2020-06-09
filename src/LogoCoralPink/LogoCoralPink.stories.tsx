@@ -5,7 +5,7 @@ import { text, withKnobs } from '@storybook/addon-knobs';
 
 // internal modules
 import LogoCoralPink from './LogoCoralPink';
-import coralPinkLogo from '@/img/logo_coral_pink.png';
+import { LOGO_WIDTH } from 'constants';
 
 export default {
   title: 'components|LogoCoralPink',
@@ -14,7 +14,7 @@ export default {
 };
 
 export const coralPink = (): JSX.Element => {
-  const logo = text('logo', coralPinkLogo);
+  const width = text('width', LOGO_WIDTH);
 
-  return <LogoCoralPink logo={logo} />;
+  return <LogoCoralPink width={width} />;
 };

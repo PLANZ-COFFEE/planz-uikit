@@ -3,20 +3,23 @@
 import { jsx, css } from '@emotion/core';
 
 // internal modules
-import { LOGO_WIDTH } from 'constants';
+import logoCoralPink from '@/img/logo_coral_pink.png';
 
 /** 로고 이미지 props */
 type LogoProps = {
-  logo: string;
+  width: string;
 };
 
 /** coral pink 로고 */
-const LogoCoralPink: React.FunctionComponent<LogoProps> = ({ logo }: LogoProps): JSX.Element => {
-  return <img src={logo} css={logoSize} />;
+const LogoCoralPink: React.FunctionComponent<LogoProps> = ({ width }: LogoProps): JSX.Element => {
+  return (
+    <img
+      src={logoCoralPink}
+      css={css`
+        width: ${width};
+      `}
+    />
+  );
 };
-
-const logoSize = css`
-  width: ${LOGO_WIDTH};
-`;
 
 export default LogoCoralPink;
