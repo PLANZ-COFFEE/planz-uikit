@@ -1,7 +1,7 @@
 // external modules
 /** @jsx jsx */
-import { jsx } from '@emotion/core';
-import Icon from './Icon';
+import { jsx, css } from '@emotion/core';
+import Icon, { iconTypes } from './Icon';
 import { text, withKnobs } from '@storybook/addon-knobs';
 
 export default {
@@ -17,7 +17,7 @@ export const camera = () => {
   return <Icon icon="camera" color={color} size={size} />;
 };
 
-export const camera_off = () => {
+export const cameraOff = () => {
   const color = text('color', undefined);
   const size = text('size', undefined);
 
@@ -240,3 +240,30 @@ export const facebook = () => {
 
   return <Icon icon="facebook" color={color} size={size} />;
 };
+
+export const listOfIcons = () => (
+  <ul css={iconListStyle}>
+    {iconTypes.map(icon => (
+      <li key={icon}>
+        <Icon icon={icon} />
+        {icon}
+      </li>
+    ))}
+  </ul>
+);
+
+const iconListStyle = css`
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  li {
+    box-sizing: border-box;
+    width: 25%;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    svg {
+      margin-right: 1rem;
+    }
+  }
+`;
