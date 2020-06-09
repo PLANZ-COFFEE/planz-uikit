@@ -1,1 +1,1 @@
-export const LOGO_WIDTH = '500px';
+const LOGO_WIDTH = '500px';
