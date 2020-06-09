@@ -7,6 +7,7 @@ module.exports = ({ config, mode }) => {
   };
   config.module.rules.push({
     test: /\.(ts|tsx)$/,
+    
     use: [
       {
         loader: require.resolve('babel-loader'),
