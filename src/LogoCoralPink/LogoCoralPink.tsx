@@ -2,6 +2,9 @@
 /** @jsx jsx */
 import { jsx, css } from '@emotion/core';
 
+// internal modules
+import { LOGO_WIDTH } from 'constants';
+
 /** 로고 이미지 props */
 type LogoProps = {
   logo: string;
@@ -13,7 +16,7 @@ const LogoCoralPink = ({ logo }: LogoProps): unknown => {
 };
 
 const logoSize = css`
-  width: 500px;
+  width: ${LOGO_WIDTH};
 `;
 
 export default LogoCoralPink;
