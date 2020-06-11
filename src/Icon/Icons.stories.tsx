@@ -241,29 +241,70 @@ export const facebook = () => {
   return <Icon icon="facebook" color={color} size={size} />;
 };
 
-export const listOfIcons = () => (
-  <ul css={iconListStyle}>
-    {iconTypes.map(icon => (
-      <li key={icon}>
-        <Icon icon={icon} />
-        {icon}
-      </li>
-    ))}
-  </ul>
-);
+export const listOfIcons = () => {
+  let prevIcon = null;
+
+  const getFirstCapitalPos = (icon: string) => {
+    const regExp = /[A-Z]/;
+
+    return icon.match(regExp);
+  };
+
+  // 아이콘의 대문자 시작 전 소문자 가져오기
+  const getSmall = (icon: string) => {
+    if (getFirstCapitalPos(icon)) {
+      return icon.substr(0, getFirstCapitalPos(icon).index);
+    }
+
+    return icon;
+  };
+
+  const setPrev = icon => {
+    if (prevIcon !== icon) {
+      console.log('true');
+      prevIcon = icon;
+
+      return true;
+    }
+
+    return false;
+  };
+
+  return (
+    <ul css={iconListStyle}>
+      {iconTypes.sort().map(icon => (
+        <li key={icon}>
+          <p css={iconTitle} style={{ display: setPrev(getSmall(icon)) ? 'block' : 'none' }}>
+            {getSmall(icon)}
+          </p>
+          <div css={iconWrapper}>
+            <Icon icon={icon} />
+            {icon}
+          </div>
+        </li>
+      ))}
+    </ul>
+  );
+};
 
 const iconListStyle = css`
   list-style: none;
-  display: flex;
-  flex-wrap: wrap;
   li {
     box-sizing: border-box;
-    width: 25%;
     padding: 1rem;
-    display: flex;
-    align-items: center;
     svg {
       margin-right: 1rem;
     }
   }
+`;
+
+const iconTitle = css`
+  font-size: 2em;
+  font-weight: 600;
+`;
+
+const iconWrapper = css`
+  display: flex;
+  align-items: center;
+  margin-left: 1.5em;
 `;

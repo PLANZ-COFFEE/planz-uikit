@@ -3,7 +3,10 @@
 import { jsx } from '@emotion/core';
 
 // internal modules
-import * as icons from '@/icons/icons';
+import * as icons from '@/icons';
+// import icons from '@/icons';
+
+console.log(icons);
 
 type IconType = keyof typeof icons;
 export const iconTypes: IconType[] = Object.keys(icons) as any[];
@@ -18,7 +21,7 @@ export type IconProps = {
 };
 
 /** Icon 컴포넌트 */
-const Icon = ({ icon, color, size }: IconProps) => {
+const Icon = ({ icon, color, size }: IconProps): JSX.Element => {
   const SVGIcon = icons[icon];
 
   return <SVGIcon css={{ color, width: size, height: 'auto' }} />;
