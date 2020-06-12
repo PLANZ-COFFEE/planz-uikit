@@ -1,4 +1,6 @@
 const path = require('path');
+const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = ({ config, mode }) => {
   config.resolve.alias = {
@@ -7,7 +9,7 @@ module.exports = ({ config, mode }) => {
   };
   config.module.rules.push({
     test: /\.(ts|tsx)$/,
-    
+
     use: [
       {
         loader: require.resolve('babel-loader'),
@@ -37,6 +39,16 @@ module.exports = ({ config, mode }) => {
     ],
   });
   config.resolve.extensions.push('.ts', '.tsx');
+  config.plugins.push(
+    new BundleAnalyzerPlugin({
+      openAnalyzer: true,
+    }),
+    new CleanWebpackPlugin(),
+  );
+  config.mode = 'production';
+  config.optimization = {
+    usedExports: true,
+  };
 
   return config;
 };

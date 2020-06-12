@@ -32,7 +32,6 @@ export { ReactComponent as cornerUpLeft } from './corner-up-left.svg';
 export { ReactComponent as cornerUpRight } from './corner-up-right.svg';
 export { ReactComponent as facebook } from './facebook.svg';
 
-// import { ReactComponent as camera } from './camera.svg';
-// import { ReactComponent as cast } from './cast.svg';
+// export { camera };
 
-// export default { camera, cast };
+// export default { camera, cameraOff, cast, check, checkCircle, checkSquare };
