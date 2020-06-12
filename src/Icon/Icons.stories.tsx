@@ -1,310 +1,268 @@
 // external modules
 /** @jsx jsx */
 import { jsx, css } from '@emotion/core';
-import Icon, { iconTypes } from './Icon';
 import { text, withKnobs } from '@storybook/addon-knobs';
+
+// internal modules
+import {
+  camera,
+  cameraOff,
+  cast,
+  check,
+  checkCircle,
+  checkSquare,
+  chevronDown,
+  chevronLeft,
+  chevronRight,
+  chevronUp,
+  chevronsDown,
+  chevronsLeft,
+  chevronsRight,
+  chevronsUp,
+  chrome,
+  circle,
+  clipboard,
+  clock,
+  cloud,
+  cloudDrizzle,
+  cloudLightning,
+  cloudOff,
+  cloudRain,
+  cloudSnow,
+  cornerDownLeft,
+  cornerDownRight,
+  cornerLeftDown,
+  cornerLeftUp,
+  cornerRightDown,
+  cornerRightUp,
+  cornerUpLeft,
+  cornerUpRight,
+  facebook,
+} from '@/icons';
+import SVGIcon from './Icon';
 
 export default {
   title: 'components|Icons',
-  component: Icon,
+  component: SVGIcon,
   decorators: [withKnobs],
 };
 
-export const camera = () => {
+export const Camera = () => {
   const color = text('color', undefined);
-  const size = text('size', undefined);
 
-  return <Icon icon="camera" color={color} size={size} />;
+  return <SVGIcon component={camera} color={color} />;
 };
 
-export const cameraOff = () => {
+export const CameraOff = () => {
   const color = text('color', undefined);
-  const size = text('size', undefined);
 
-  return <Icon icon="cameraOff" color={color} size={size} />;
+  return <SVGIcon component={cameraOff} color={color} />;
 };
 
-export const cast = () => {
+export const Cast = () => {
   const color = text('color', undefined);
-  const size = text('size', undefined);
 
-  return <Icon icon="cast" color={color} size={size} />;
+  return <SVGIcon component={cast} color={color} />;
 };
 
-export const check = () => {
+export const Check = () => {
   const color = text('color', undefined);
-  const size = text('size', undefined);
 
-  return <Icon icon="check" color={color} size={size} />;
+  return <SVGIcon component={check} color={color} />;
 };
 
-export const checkCircle = () => {
+export const CheckCircle = () => {
   const color = text('color', undefined);
-  const size = text('size', undefined);
 
-  return <Icon icon="checkCircle" color={color} size={size} />;
+  return <SVGIcon component={checkCircle} color={color} />;
 };
 
-export const checkSquare = () => {
+export const CheckSquare = () => {
   const color = text('color', undefined);
-  const size = text('size', undefined);
 
-  return <Icon icon="checkSquare" color={color} size={size} />;
+  return <SVGIcon component={checkSquare} color={color} />;
 };
 
-export const chevronDown = () => {
+export const ChevronDown = () => {
   const color = text('color', undefined);
-  const size = text('size', undefined);
 
-  return <Icon icon="chevronDown" color={color} size={size} />;
+  return <SVGIcon component={chevronDown} color={color} />;
 };
 
-export const chevronLeft = () => {
+export const ChevronLeft = () => {
   const color = text('color', undefined);
-  const size = text('size', undefined);
 
-  return <Icon icon="chevronLeft" color={color} size={size} />;
+  return <SVGIcon component={chevronLeft} color={color} />;
 };
 
-export const chevronRight = () => {
+export const ChevronRight = () => {
   const color = text('color', undefined);
-  const size = text('size', undefined);
 
-  return <Icon icon="chevronRight" color={color} size={size} />;
+  return <SVGIcon component={chevronRight} color={color} />;
 };
 
-export const chevronUp = () => {
+export const ChevronUp = () => {
   const color = text('color', undefined);
-  const size = text('size', undefined);
 
-  return <Icon icon="chevronUp" color={color} size={size} />;
+  return <SVGIcon component={chevronUp} color={color} />;
 };
 
-export const chevronsDown = () => {
+export const ChevronsDown = () => {
   const color = text('color', undefined);
-  const size = text('size', undefined);
 
-  return <Icon icon="chevronsDown" color={color} size={size} />;
+  return <SVGIcon component={chevronsDown} color={color} />;
 };
 
-export const chevronsLeft = () => {
+export const ChevronsLeft = () => {
   const color = text('color', undefined);
-  const size = text('size', undefined);
 
-  return <Icon icon="chevronsLeft" color={color} size={size} />;
+  return <SVGIcon component={chevronsLeft} color={color} />;
 };
 
-export const chevronsRight = () => {
+export const ChevronsRight = () => {
   const color = text('color', undefined);
-  const size = text('size', undefined);
 
-  return <Icon icon="chevronsRight" color={color} size={size} />;
+  return <SVGIcon component={chevronsRight} color={color} />;
 };
 
-export const chevronsUp = () => {
+export const ChevronsUp = () => {
   const color = text('color', undefined);
-  const size = text('size', undefined);
 
-  return <Icon icon="chevronsUp" color={color} size={size} />;
+  return <SVGIcon component={chevronsUp} color={color} />;
 };
 
-export const chrome = () => {
+export const Chrome = () => {
   const color = text('color', undefined);
-  const size = text('size', undefined);
 
-  return <Icon icon="chrome" color={color} size={size} />;
+  return <SVGIcon component={chrome} color={color} />;
 };
 
-export const circle = () => {
+export const Circle = () => {
   const color = text('color', undefined);
-  const size = text('size', undefined);
 
-  return <Icon icon="circle" color={color} size={size} />;
+  return <SVGIcon component={circle} color={color} />;
 };
 
-export const clipboard = () => {
+export const Clipboard = () => {
   const color = text('color', undefined);
-  const size = text('size', undefined);
 
-  return <Icon icon="clipboard" color={color} size={size} />;
+  return <SVGIcon component={clipboard} color={color} />;
 };
 
-export const clock = () => {
+export const Clock = () => {
   const color = text('color', undefined);
-  const size = text('size', undefined);
 
-  return <Icon icon="clock" color={color} size={size} />;
+  return <SVGIcon component={clock} color={color} />;
 };
 
-export const cloud = () => {
+export const Cloud = () => {
   const color = text('color', undefined);
-  const size = text('size', undefined);
 
-  return <Icon icon="cloud" color={color} size={size} />;
+  return <SVGIcon component={cloud} color={color} />;
 };
 
-export const cloudDrizzle = () => {
+export const CloudDrizzle = () => {
   const color = text('color', undefined);
-  const size = text('size', undefined);
 
-  return <Icon icon="cloudDrizzle" color={color} size={size} />;
+  return <SVGIcon component={cloudDrizzle} color={color} />;
 };
 
-export const cloudLightning = () => {
+export const CloudLightning = () => {
   const color = text('color', undefined);
-  const size = text('size', undefined);
 
-  return <Icon icon="cloudLightning" color={color} size={size} />;
+  return <SVGIcon component={cloudLightning} color={color} />;
 };
 
-export const cloudOff = () => {
+export const CloudOff = () => {
   const color = text('color', undefined);
-  const size = text('size', undefined);
 
-  return <Icon icon="cloudOff" color={color} size={size} />;
+  return <SVGIcon component={cloudOff} color={color} />;
 };
 
-export const cloudRain = () => {
+export const CloudRain = () => {
   const color = text('color', undefined);
-  const size = text('size', undefined);
 
-  return <Icon icon="cloudRain" color={color} size={size} />;
+  return <SVGIcon component={cloudRain} color={color} />;
 };
 
-export const cloudSnow = () => {
+export const CloudSnow = () => {
   const color = text('color', undefined);
-  const size = text('size', undefined);
 
-  return <Icon icon="cloudSnow" color={color} size={size} />;
+  return <SVGIcon component={cloudSnow} color={color} />;
 };
 
-export const cornerDownLeft = () => {
+export const CornerDownLeft = () => {
   const color = text('color', undefined);
-  const size = text('size', undefined);
 
-  return <Icon icon="cornerDownLeft" color={color} size={size} />;
+  return <SVGIcon component={cornerDownLeft} color={color} />;
 };
 
-export const cornerDownRight = () => {
+export const CornerDownRight = () => {
   const color = text('color', undefined);
-  const size = text('size', undefined);
 
-  return <Icon icon="cornerDownRight" color={color} size={size} />;
+  return <SVGIcon component={cornerDownRight} color={color} />;
 };
 
-export const cornerLeftDown = () => {
+export const CornerLeftDown = () => {
   const color = text('color', undefined);
-  const size = text('size', undefined);
 
-  return <Icon icon="cornerLeftDown" color={color} size={size} />;
+  return <SVGIcon component={cornerLeftDown} color={color} />;
 };
 
-export const cornerLeftUp = () => {
+export const CornerLeftUp = () => {
   const color = text('color', undefined);
-  const size = text('size', undefined);
 
-  return <Icon icon="cornerLeftUp" color={color} size={size} />;
+  return <SVGIcon component={cornerLeftUp} color={color} />;
 };
 
-export const cornerRightDown = () => {
+export const CornerRightDown = () => {
   const color = text('color', undefined);
-  const size = text('size', undefined);
 
-  return <Icon icon="cornerRightDown" color={color} size={size} />;
+  return <SVGIcon component={cornerRightDown} color={color} />;
 };
 
-export const cornerRightUp = () => {
+export const CornerRightUp = () => {
   const color = text('color', undefined);
-  const size = text('size', undefined);
 
-  return <Icon icon="cornerRightUp" color={color} size={size} />;
+  return <SVGIcon component={cornerRightUp} color={color} />;
 };
 
-export const cornerUpLeft = () => {
+export const CornerUpLeft = () => {
   const color = text('color', undefined);
-  const size = text('size', undefined);
 
-  return <Icon icon="cornerUpLeft" color={color} size={size} />;
+  return <SVGIcon component={cornerUpLeft} color={color} />;
 };
 
-export const cornerUpRight = () => {
+export const CornerUpRight = () => {
   const color = text('color', undefined);
-  const size = text('size', undefined);
 
-  return <Icon icon="cornerUpRight" color={color} size={size} />;
+  return <SVGIcon component={cornerUpRight} color={color} />;
 };
 
-export const facebook = () => {
+export const Facebook = () => {
   const color = text('color', undefined);
-  const size = text('size', undefined);
 
-  return <Icon icon="facebook" color={color} size={size} />;
+  return <SVGIcon component={facebook} color={color} />;
 };
 
-export const listOfIcons = () => {
-  let prevIcon = null;
+// const iconListStyle = css`
+//   list-style: none;
+//   li {
+//     box-sizing: border-box;
+//     padding: 1rem;
+//     svg {
+//       margin-right: 1rem;
+//     }
+//   }
+// `;
 
-  const getFirstCapitalPos = (icon: string) => {
-    const regExp = /[A-Z]/;
+// const iconTitle = css`
+//   font-size: 2em;
+//   font-weight: 600;
+// `;
 
-    return icon.match(regExp);
-  };
-
-  // 아이콘의 대문자 시작 전 소문자 가져오기
-  const getSmall = (icon: string) => {
-    if (getFirstCapitalPos(icon)) {
-      return icon.substr(0, getFirstCapitalPos(icon).index);
-    }
-
-    return icon;
-  };
-
-  const setPrev = icon => {
-    if (prevIcon !== icon) {
-      console.log('true');
-      prevIcon = icon;
-
-      return true;
-    }
-
-    return false;
-  };
-
-  return (
-    <ul css={iconListStyle}>
-      {iconTypes.sort().map(icon => (
-        <li key={icon}>
-          <p css={iconTitle} style={{ display: setPrev(getSmall(icon)) ? 'block' : 'none' }}>
-            {getSmall(icon)}
-          </p>
-          <div css={iconWrapper}>
-            <Icon icon={icon} />
-            {icon}
-          </div>
-        </li>
-      ))}
-    </ul>
-  );
-};
-
-const iconListStyle = css`
-  list-style: none;
-  li {
-    box-sizing: border-box;
-    padding: 1rem;
-    svg {
-      margin-right: 1rem;
-    }
-  }
-`;
-
-const iconTitle = css`
-  font-size: 2em;
-  font-weight: 600;
-`;
-
-const iconWrapper = css`
-  display: flex;
-  align-items: center;
-  margin-left: 1.5em;
-`;
+// const iconWrapper = css`
+//   display: flex;
+//   align-items: center;
+//   margin-left: 1.5em;
+// `;
