@@ -249,6 +249,7 @@ export const Facebook = () => {
 export const listOfIcons = () => {
   let prevIcon = null;
 
+  // 아이콘 첫 대문자 위치
   const getFirstCapitalPos = (icon: string) => {
     const regExp = /[A-Z]/;
 

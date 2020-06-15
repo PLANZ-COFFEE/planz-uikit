@@ -62,7 +62,7 @@ export { facebook, ... }
   parsed size: 131.66 KB
   gzipped size: 13.42 KB
 
-### (3) list of icons, facebook 한개만 import (1개 icon)
+## (3) list of icons, facebook 한개만 import (1개 icon)
 
 - main.bundle
   stat size: 5.14 MB
@@ -79,7 +79,7 @@ export { facebook, ... }
   parsed size: 113.64 KB
   gzipped size: 12.44 KB
 
-### (3 - 1) facebook 한개만 import (1개 icon)
+## (3 - 1) facebook 한개만 import (1개 icon)
 
 - main.bundle
   stat size: 4.96 MB
@@ -105,12 +105,11 @@ export { facebook, ... }
    export default { facebook }
    방식으로 단일 아이콘을 위한 named export 와 list of icons를 위해 export default로
    두번 ReactComponent as ~ 를 하는 것은 (1)번과 (2)번의 결과를 비교해 볼 때 stat size 242.7KB - 241.46KB = 1.24KB, 1.24KB/33 = 30B 의 차이가 존재하나, webpack에 의해 tree shaking 된 parsed size는 132.09 KB로 동일함을 확인할 수 있다.
-
-다만, tree shaking 전 약간의 용량 이득과 (2)번의 방식처럼
-import { ReactComponent as facebook } from './facebook.svg';
-export { facebook, ... }, export default { facebook, ... }
-한번만 ReactComponent as ~를 해주는 것이 코드 상 더 깔끔하므로 한번 import 후 named와 default 모두 export 하는 방식을 사용했다.
+   다만, tree shaking 전 약간의 용량 이득과 (2)번의 방식처럼<br />
+   import { ReactComponent as facebook } from './facebook.svg';<br />
+   export { facebook, ... }, export default { facebook, ... }<br /><br />
+   한번만 ReactComponent as ~를 해주는 것이 코드 상 더 깔끔하므로 한번 import 후 named와 default 모두 export 하는 2방식을 사용했다.
 
 2. 33개의 icon을 import할 때 (2)번과 1개의 icon을 import 할 때 (3)번 용량 차이는 132.09KB- 113.64KB = 18.45KB, 18.45KB/33 = 550B로 실제 icon의 용량(300~600B)과 유사한 차이가 존재함을 확인할 수 있다.
 
-3) list of icons를 import 할 때(3)번과 list of icons가 없을 때(3 - 1)번의 차이는 113.64KB - 17.64KB = 96KB 이다.
+3. list of icons를 import 할 때 (3)번과 list of icons가 없을 때 (3 - 1)번의 차이는 113.64KB - 17.64KB = 96KB 이다.
