@@ -267,7 +267,6 @@ export const listOfIcons = () => {
 
   const setPrev = icon => {
     if (prevIcon !== icon) {
-      console.log('true');
       prevIcon = icon;
 
       return true;
