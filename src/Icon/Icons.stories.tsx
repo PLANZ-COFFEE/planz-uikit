@@ -4,7 +4,7 @@ import { jsx, css } from '@emotion/core';
 import { text, withKnobs } from '@storybook/addon-knobs';
 
 // internal modules
-import {
+import icons, {
   camera,
   cameraOff,
   cast,
@@ -245,24 +245,73 @@ export const Facebook = () => {
   return <SVGIcon component={facebook} color={color} />;
 };
 
-// const iconListStyle = css`
-//   list-style: none;
-//   li {
-//     box-sizing: border-box;
-//     padding: 1rem;
-//     svg {
-//       margin-right: 1rem;
-//     }
-//   }
-// `;
+// list of icons
+export const listOfIcons = () => {
+  let prevIcon = null;
 
-// const iconTitle = css`
-//   font-size: 2em;
-//   font-weight: 600;
-// `;
+  const getFirstCapitalPos = (icon: string) => {
+    const regExp = /[A-Z]/;
 
-// const iconWrapper = css`
-//   display: flex;
-//   align-items: center;
-//   margin-left: 1.5em;
-// `;
+    return icon.match(regExp);
+  };
+
+  // 아이콘의 대문자 시작 전 소문자 가져오기
+  const getSmall = (icon: string) => {
+    if (getFirstCapitalPos(icon)) {
+      return icon.substr(0, getFirstCapitalPos(icon).index);
+    }
+
+    return icon;
+  };
+
+  const setPrev = icon => {
+    if (prevIcon !== icon) {
+      console.log('true');
+      prevIcon = icon;
+
+      return true;
+    }
+
+    return false;
+  };
+
+  const iconTitles = Object.keys(icons);
+
+  return (
+    <ul css={iconListStyle}>
+      {iconTitles.sort().map(icon => (
+        <li key={icon}>
+          <p css={iconTitle} style={{ display: setPrev(getSmall(icon)) ? 'block' : 'none' }}>
+            {getSmall(icon)}
+          </p>
+          <div css={iconWrapper}>
+            <SVGIcon component={icons[icon]} />
+            {icon}
+          </div>
+        </li>
+      ))}
+    </ul>
+  );
+};
+
+const iconListStyle = css`
+  list-style: none;
+  li {
+    box-sizing: border-box;
+    padding: 1rem;
+    svg {
+      margin-right: 1rem;
+    }
+  }
+`;
+
+const iconTitle = css`
+  font-size: 2em;
+  font-weight: 600;
+`;
+
+const iconWrapper = css`
+  display: flex;
+  align-items: center;
+  margin-left: 1.5em;
+`;
