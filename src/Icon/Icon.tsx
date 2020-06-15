@@ -3,8 +3,14 @@
 import { jsx } from '@emotion/core';
 import React from 'react';
 
-// SVGIcon
-const SVGIcon = React.forwardRef((props, ref) => {
+/**  SVGIcon props */
+type SVGprops = {
+  color?: string;
+  component: React.ElementType;
+};
+
+/**  SVGIcon */
+const SVGIcon: React.FunctionComponent<SVGprops> = React.forwardRef((props, ref) => {
   const { children, color, component: Component = 'svg' } = props;
 
   return (
