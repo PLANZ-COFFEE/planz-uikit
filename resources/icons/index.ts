@@ -1,204 +1,99 @@
-import { ReactComponent as alertCircle } from './alert-circle.svg';
-import { ReactComponent as alertOctagon } from './alert-octagon.svg';
-import { ReactComponent as alertTriangle } from './alert-triangle.svg';
-import { ReactComponent as alignCenter } from './align-center.svg';
-import { ReactComponent as alignJustify } from './align-justify.svg';
-import { ReactComponent as alignLeft } from './align-left.svg';
-import { ReactComponent as alignRight } from './align-right.svg';
-import { ReactComponent as anchor } from './anchor.svg';
-import { ReactComponent as aperture } from './aperture.svg';
-import { ReactComponent as archive } from './archive.svg';
-import { ReactComponent as arrowDown } from './arrow-down.svg';
-import { ReactComponent as arrowDownCircle } from './arrow-down-circle.svg';
-import { ReactComponent as arrowDownLeft } from './arrow-down-left.svg';
-import { ReactComponent as arrowDownRight } from './arrow-down-right.svg';
-import { ReactComponent as arrowLeft } from './arrow-left.svg';
-import { ReactComponent as arrowLeftCircle } from './arrow-left-circle.svg';
-import { ReactComponent as arrowRight } from './arrow-right.svg';
-import { ReactComponent as arrowRightCircle } from './arrow-right-circle.svg';
-import { ReactComponent as arrowUp } from './arrow-up.svg';
-import { ReactComponent as arrowUpCircle } from './arrow-up-circle.svg';
-import { ReactComponent as arrowUpLeft } from './arrow-up-left.svg';
-import { ReactComponent as arrowUpRight } from './arrow-up-right.svg';
-import { ReactComponent as atSign } from './at-sign.svg';
-import { ReactComponent as bell } from './bell.svg';
-import { ReactComponent as bellOff } from './bell-off.svg';
-import { ReactComponent as bluetooth } from './bluetooth.svg';
-import { ReactComponent as bold } from './bold.svg';
-import { ReactComponent as book } from './book.svg';
-import { ReactComponent as bookmark } from './bookmark.svg';
-import { ReactComponent as bookOpen } from './book-open.svg';
-import { ReactComponent as box } from './box.svg';
-import { ReactComponent as briefcase } from './briefcase.svg';
-import { ReactComponent as calendar } from './calendar.svg';
-import { ReactComponent as camera } from './camera.svg';
-import { ReactComponent as cameraOff } from './camera-off.svg';
-import { ReactComponent as cast } from './cast.svg';
-import { ReactComponent as check } from './check.svg';
-import { ReactComponent as checkCircle } from './check-circle.svg';
-import { ReactComponent as checkSquare } from './check-square.svg';
-import { ReactComponent as chevronDown } from './chevron-down.svg';
-import { ReactComponent as chevronLeft } from './chevron-left.svg';
-import { ReactComponent as chevronRight } from './chevron-right.svg';
-import { ReactComponent as chevronUp } from './chevron-up.svg';
-import { ReactComponent as chevronsDown } from './chevrons-down.svg';
-import { ReactComponent as chevronsLeft } from './chevrons-left.svg';
-import { ReactComponent as chevronsRight } from './chevrons-right.svg';
-import { ReactComponent as chevronsUp } from './chevrons-up.svg';
-import { ReactComponent as chrome } from './chrome.svg';
-import { ReactComponent as circle } from './circle.svg';
-import { ReactComponent as clipboard } from './clipboard.svg';
-import { ReactComponent as clock } from './clock.svg';
-import { ReactComponent as cloud } from './cloud.svg';
-import { ReactComponent as cloudDrizzle } from './cloud-drizzle.svg';
-import { ReactComponent as cloudLightning } from './cloud-lightning.svg';
-import { ReactComponent as cloudOff } from './cloud-off.svg';
-import { ReactComponent as cloudRain } from './cloud-rain.svg';
-import { ReactComponent as cloudSnow } from './cloud-snow.svg';
-import { ReactComponent as cornerDownLeft } from './corner-down-left.svg';
-import { ReactComponent as cornerDownRight } from './corner-down-right.svg';
-import { ReactComponent as cornerLeftDown } from './corner-left-down.svg';
-import { ReactComponent as cornerLeftUp } from './corner-left-up.svg';
-import { ReactComponent as cornerRightDown } from './corner-right-down.svg';
-import { ReactComponent as cornerRightUp } from './corner-right-up.svg';
-import { ReactComponent as cornerUpLeft } from './corner-up-left.svg';
-import { ReactComponent as cornerUpRight } from './corner-up-right.svg';
-import { ReactComponent as facebook } from './facebook.svg';
-
-export {
-  alertCircle,
-  alertOctagon,
-  alertTriangle,
-  alignCenter,
-  alignJustify,
-  alignLeft,
-  alignRight,
-  anchor,
-  aperture,
-  archive,
-  arrowDown,
-  arrowDownCircle,
-  arrowDownLeft,
-  arrowDownRight,
-  arrowLeft,
-  arrowLeftCircle,
-  arrowRight,
-  arrowRightCircle,
-  arrowUp,
-  arrowUpCircle,
-  arrowUpLeft,
-  arrowUpRight,
-  atSign,
-  bell,
-  bellOff,
-  bluetooth,
-  bold,
-  book,
-  bookmark,
-  bookOpen,
-  box,
-  briefcase,
-  calendar,
-  camera,
-  cameraOff,
-  cast,
-  check,
-  checkCircle,
-  checkSquare,
-  chevronDown,
-  chevronLeft,
-  chevronRight,
-  chevronUp,
-  chevronsDown,
-  chevronsLeft,
-  chevronsRight,
-  chevronsUp,
-  chrome,
-  circle,
-  clipboard,
-  clock,
-  cloud,
-  cloudDrizzle,
-  cloudLightning,
-  cloudOff,
-  cloudRain,
-  cloudSnow,
-  cornerDownLeft,
-  cornerDownRight,
-  cornerLeftDown,
-  cornerLeftUp,
-  cornerRightDown,
-  cornerRightUp,
-  cornerUpLeft,
-  cornerUpRight,
-  facebook,
-};
-
-export default {
-  alertCircle,
-  alertOctagon,
-  alertTriangle,
-  alignCenter,
-  alignJustify,
-  alignLeft,
-  alignRight,
-  anchor,
-  aperture,
-  archive,
-  arrowDown,
-  arrowDownCircle,
-  arrowDownLeft,
-  arrowDownRight,
-  arrowLeft,
-  arrowLeftCircle,
-  arrowRight,
-  arrowRightCircle,
-  arrowUp,
-  arrowUpCircle,
-  arrowUpLeft,
-  arrowUpRight,
-  atSign,
-  bell,
-  bellOff,
-  bluetooth,
-  bold,
-  book,
-  bookmark,
-  bookOpen,
-  box,
-  briefcase,
-  calendar,
-  camera,
-  cameraOff,
-  cast,
-  check,
-  checkCircle,
-  checkSquare,
-  chevronDown,
-  chevronLeft,
-  chevronRight,
-  chevronUp,
-  chevronsDown,
-  chevronsLeft,
-  chevronsRight,
-  chevronsUp,
-  chrome,
-  circle,
-  clipboard,
-  clock,
-  cloud,
-  cloudDrizzle,
-  cloudLightning,
-  cloudOff,
-  cloudRain,
-  cloudSnow,
-  cornerDownLeft,
-  cornerDownRight,
-  cornerLeftDown,
-  cornerLeftUp,
-  cornerRightDown,
-  cornerRightUp,
-  cornerUpLeft,
-  cornerUpRight,
-  facebook,
-};
+export { ReactComponent as alertCircle } from './alert-circle.svg';
+export { ReactComponent as alertOctagon } from './alert-octagon.svg';
+export { ReactComponent as alertTriangle } from './alert-triangle.svg';
+export { ReactComponent as alignCenter } from './align-center.svg';
+export { ReactComponent as alignJustify } from './align-justify.svg';
+export { ReactComponent as alignLeft } from './align-left.svg';
+export { ReactComponent as alignRight } from './align-right.svg';
+export { ReactComponent as anchor } from './anchor.svg';
+export { ReactComponent as aperture } from './aperture.svg';
+export { ReactComponent as archive } from './archive.svg';
+export { ReactComponent as arrowDownCircle } from './arrow-down-circle.svg';
+export { ReactComponent as arrowDownLeft } from './arrow-down-left.svg';
+export { ReactComponent as arrowDownRight } from './arrow-down-right.svg';
+export { ReactComponent as arrowDown } from './arrow-down.svg';
+export { ReactComponent as arrowLeftCircle } from './arrow-left-circle.svg';
+export { ReactComponent as arrowLeft } from './arrow-left.svg';
+export { ReactComponent as arrowRightCircle } from './arrow-right-circle.svg';
+export { ReactComponent as arrowUpLeft } from './arrow-up-left.svg';
+export { ReactComponent as arrowRight } from './arrow-right.svg';
+export { ReactComponent as arrowUpCircle } from './arrow-up-circle.svg';
+export { ReactComponent as arrowUpRight } from './arrow-up-right.svg';
+export { ReactComponent as arrowUp } from './arrow-up.svg';
+export { ReactComponent as atSign } from './at-sign.svg';
+export { ReactComponent as bellOff } from './bell-off.svg';
+export { ReactComponent as bell } from './bell.svg';
+export { ReactComponent as bluetooth } from './bluetooth.svg';
+export { ReactComponent as bold } from './bold.svg';
+export { ReactComponent as bookOpen } from './book-open.svg';
+export { ReactComponent as book } from './book.svg';
+export { ReactComponent as bookmark } from './bookmark.svg';
+export { ReactComponent as box } from './box.svg';
+export { ReactComponent as briefcase } from './briefcase.svg';
+export { ReactComponent as calendar } from './calendar.svg';
+export { ReactComponent as cameraOff } from './camera-off.svg';
+export { ReactComponent as camera } from './camera.svg';
+export { ReactComponent as cast } from './cast.svg';
+export { ReactComponent as checkCircle } from './check-circle.svg';
+export { ReactComponent as checkSquare } from './check-square.svg';
+export { ReactComponent as chevronLeft } from './chevron-left.svg';
+export { ReactComponent as check } from './check.svg';
+export { ReactComponent as chevronDown } from './chevron-down.svg';
+export { ReactComponent as chevronRight } from './chevron-right.svg';
+export { ReactComponent as chevronUp } from './chevron-up.svg';
+export { ReactComponent as chevronsRight } from './chevrons-right.svg';
+export { ReactComponent as chevronsUp } from './chevrons-up.svg';
+export { ReactComponent as chevronsDown } from './chevrons-down.svg';
+export { ReactComponent as chevronsLeft } from './chevrons-left.svg';
+export { ReactComponent as chrome } from './chrome.svg';
+export { ReactComponent as cloudLightning } from './cloud-lightning.svg';
+export { ReactComponent as circle } from './circle.svg';
+export { ReactComponent as clipboard } from './clipboard.svg';
+export { ReactComponent as cloudDrizzle } from './cloud-drizzle.svg';
+export { ReactComponent as cloudRain } from './cloud-rain.svg';
+export { ReactComponent as cloudOff } from './cloud-off.svg';
+export { ReactComponent as cornerDownLeft } from './corner-down-left.svg';
+export { ReactComponent as clock } from './clock.svg';
+export { ReactComponent as cloud } from './cloud.svg';
+export { ReactComponent as cornerDownRight } from './corner-down-right.svg';
+export { ReactComponent as cloudSnow } from './cloud-snow.svg';
+export { ReactComponent as cornerLeftDown } from './corner-left-down.svg';
+export { ReactComponent as cornerLeftUp } from './corner-left-up.svg';
+export { ReactComponent as cornerRightDown } from './corner-right-down.svg';
+export { ReactComponent as cornerUpLeft } from './corner-up-left.svg';
+export { ReactComponent as facebook } from './facebook.svg';
+export { ReactComponent as cornerRightUp } from './corner-right-up.svg';
+export { ReactComponent as cornerUpRight } from './corner-up-right.svg';
+export { ReactComponent as film } from './film.svg';
+export { ReactComponent as hash } from './hash.svg';
+export { ReactComponent as instagram } from './instagram.svg';
+export { ReactComponent as logOut } from './log-out.svg';
+export { ReactComponent as logIn } from './log-in.svg';
+export { ReactComponent as mapPin } from './map-pin.svg';
+export { ReactComponent as minusCircle } from './minus-circle.svg';
+export { ReactComponent as map } from './map.svg';
+export { ReactComponent as moreHorizontal } from './more-horizontal.svg';
+export { ReactComponent as minusSquare } from './minus-square.svg';
+export { ReactComponent as moreVertical } from './more-vertical.svg';
+export { ReactComponent as phone } from './phone.svg';
+export { ReactComponent as rotateCw } from './rotate-cw.svg';
+export { ReactComponent as rotateCcw } from './rotate-ccw.svg';
+export { ReactComponent as shoppingCart } from './shopping-cart.svg';
+export { ReactComponent as sliders } from './sliders.svg';
+export { ReactComponent as slash } from './slash.svg';
+export { ReactComponent as thumbsDown } from './thumbs-down.svg';
+export { ReactComponent as thumbsUp } from './thumbs-up.svg';
+export { ReactComponent as umbrella } from './umbrella.svg';
+export { ReactComponent as volume1 } from './volume-1.svg';
+export { ReactComponent as volumeX } from './volume-x.svg';
+export { ReactComponent as volume2 } from './volume-2.svg';
+export { ReactComponent as wifiOff } from './wifi-off.svg';
+export { ReactComponent as volume } from './volume.svg';
+export { ReactComponent as wifi } from './wifi.svg';
+export { ReactComponent as xSquare } from './x-square.svg';
+export { ReactComponent as xOctagon } from './x-octagon.svg';
+export { ReactComponent as xCircle } from './x-circle.svg';
+export { ReactComponent as x } from './x.svg';
+export { ReactComponent as youtube } from './youtube.svg';
+export { ReactComponent as zoomIn } from './zoom-in.svg';
+export { ReactComponent as zoomOut } from './zoom-out.svg';

@@ -1,8 +1,8 @@
 Arguments: 
-  /usr/local/bin/node /usr/share/yarn/bin/yarn.js run --silent husky-run pre-commit
+  /usr/local/bin/node /usr/share/yarn/bin/yarn.js run storybook
 
 PATH: 
-  /usr/lib/git-core:/usr/lib/jvm/java-8-openjdk-amd64/bin/:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+  /usr/lib/jvm/java-8-openjdk-amd64/bin/:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
 
 Yarn version: 
   1.22.4
@@ -14,7 +14,7 @@ Platform:
   linux x64
 
 Trace: 
-  SyntaxError: /home/hj/바탕화면/wecode/planz/planz-uikit/package.json: Unexpected token / in JSON at position 2396
+  SyntaxError: /home/hj/바탕화면/wecode/planz/planz-uikit/package.json: Unexpected token “ in JSON at position 2231
       at JSON.parse (<anonymous>)
       at /usr/share/yarn/lib/cli.js:1625:59
       at Generator.next (<anonymous>)
@@ -36,7 +36,9 @@ npm manifest:
     "keywords": [],
     "author": "",
     "license": "MIT",
-    "dependencies": {},
+    "dependencies": {
+      "svg-auto-export": "^1.0.1"
+    },
     "devDependencies": {
       "@babel/core": "^7.9.6",
       "@rollup/plugin-image": "^2.0.5",
@@ -81,11 +83,12 @@ npm manifest:
     },
     "scripts": {
       "storybook": "start-storybook -p 6006",
-      "build-storybook": "build-storybook",
+      "build-storybook": "yarn pre-build-autoExportScripts && build-storybook",
       "lint": "eslint 'src/**/*.{js,ts,tsx}' --quiet --fix",
       "build": "rollup -c",
       "build:types": "tsc --emitDeclarationOnly",
-      "test": "jest --watchAll --verbose"
+      "test": "jest --watchAll --verbose",
+      “pre-build-autoExportScripts”: “node autoExportScripts/autoExportScript.js”
     },
     "peerDependencies": {
       "@emotion/core": "^10.0.28",
@@ -98,9 +101,7 @@ npm manifest:
       }
     },
     "lint-staged": {
-      "*.{js,ts,tsx}": [
-        // "eslint --fix"
-      ]
+      "*.{js,ts,tsx}": []
     }
   }
 
