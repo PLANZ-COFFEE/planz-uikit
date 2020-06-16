@@ -1,15 +1,15 @@
 // external moudles
 /** @jsx jsx */
 import { jsx } from '@emotion/core';
-import React from 'react';
 
 /** Font props */
 export type FontProps = {
-  title: string | number;
-  content: string | number;
+  title?: string | number;
+  content?: string | number;
   fontFamily?: string;
   letterSpacing?: string | number;
   lineHeight?: string | number;
+  children: string | number;
 };
 
 /** Font 컴포넌트 */

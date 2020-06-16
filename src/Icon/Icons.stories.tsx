@@ -496,7 +496,7 @@ export const listOfIcons = () => {
     return icon;
   };
 
-  const setPrev = icon => {
+  const setPrev = (icon: string) => {
     if (prevIcon !== icon) {
       prevIcon = icon;
 

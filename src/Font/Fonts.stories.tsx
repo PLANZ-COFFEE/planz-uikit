@@ -1,6 +1,6 @@
 // external modules
 /** @jsx jsx */
-import { jsx, css } from '@emotion/core';
+import { jsx } from '@emotion/core';
 import { text, withKnobs } from '@storybook/addon-knobs';
 
 // internal modules
@@ -15,7 +15,7 @@ export default {
 export const contentEn = (): JSX.Element => {
   const fontFamily = text('fontFamily', 'Open Sans');
   const lineHeight = text('lineHeight', '1.5');
-  const children = text('cntent', 'Open Sans');
+  const children: string = text('children', 'Hello everybody!');
 
   return (
     <Font fontFamily={fontFamily} lineHeight={lineHeight}>
