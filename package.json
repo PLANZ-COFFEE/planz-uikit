@@ -1,13 +1,11 @@
 {
   "name": "planz-uikit-hj",
   "sideEffects": false,
-  "version": "1.2.91",
+  "version": "1.2.92",
   "description": "",
   "module": "dist/index.js",
   "types": "dist/types/index.d.ts",
-  "files": [
-    "/dist"
-  ],
+  "files": [],
   "repository": "https://github.com/planzcoffee/planz-uikit.git",
   "keywords": [],
   "author": "",
@@ -60,7 +58,7 @@
     "webpack-bundle-analyzer": "^3.8.0"
   },
   "scripts": {
-    "storybook": "yarn pre-build-autoExportScripts && start-storybook -p 6006",
+    "storybook": "start-storybook -p 6006",
     "build-storybook": "yarn pre-build-autoExportScripts && build-storybook",
     "lint": "eslint 'src/**/*.{js,ts,tsx}' --quiet --fix",
     "build": "rollup -c",
