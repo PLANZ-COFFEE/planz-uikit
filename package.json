@@ -1,7 +1,7 @@
 {
   "name": "planz-uikit-hj",
   "sideEffects": false,
-  "version": "1.2.3",
+  "version": "1.2.4",
   "description": "",
   "module": "dist/index.js",
   "types": "dist/types/index.d.ts",
@@ -12,9 +12,7 @@
   "keywords": [],
   "author": "",
   "license": "MIT",
-  "dependencies": {
-    "svg-auto-export": "^1.0.1"
-  },
+  "dependencies": {},
   "devDependencies": {
     "@babel/core": "^7.9.6",
     "@rollup/plugin-image": "^2.0.5",
