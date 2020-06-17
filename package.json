@@ -12,7 +12,9 @@
   "keywords": [],
   "author": "",
   "license": "MIT",
-  "dependencies": {},
+  "dependencies": {
+    "react-component-svg-auto-export": "^1.0.5"
+  },
   "devDependencies": {
     "@babel/core": "^7.9.6",
     "@rollup/plugin-image": "^2.0.5",
@@ -44,6 +46,7 @@
     "lint-staged": ">=10",
     "puppeteer": "^3.1.0",
     "react-docgen-typescript-loader": "^3.7.2",
+    "react-svg-loader": "^3.0.3",
     "react-test-renderer": "^16.13.1",
     "rollup": "^2.10.9",
     "rollup-plugin-babel": "^4.4.0",
@@ -53,25 +56,27 @@
     "rollup-plugin-url": "^3.0.1",
     "ts-jest": "^26.0.0",
     "typescript": "^3.9.3",
+<<<<<<< HEAD
+    "webpack": "^4.43.0",
+    "webpack-bundle-analyzer": "^3.8.0",
+    "webpack-cli": "^3.3.11"
+=======
     "webpack-bundle-analyzer": "^3.8.0"
+>>>>>>> master
   },
   "scripts": {
-    "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook",
+    "storybook": "yarn pre-build-autoExportScripts && start-storybook -p 6006",
+    "build-storybook": "yarn pre-build-autoExportScripts && build-storybook",
     "lint": "eslint 'src/**/*.{js,ts,tsx}' --quiet --fix",
     "build": "rollup -c",
     "build:types": "tsc --emitDeclarationOnly",
-    "test": "jest --watchAll --verbose"
+    "test": "jest --watchAll --verbose",
+    "pre-build-autoExportScripts": "node ./node_modules/react-component-svg-auto-export/index.ts"
   },
   "peerDependencies": {
     "@emotion/core": "^10.0.28",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
   },
   "lint-staged": {
     "*.{js,ts,tsx}": []
