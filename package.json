@@ -1,7 +1,7 @@
 {
   "name": "planz-uikit-hj",
   "sideEffects": false,
-  "version": "1.2.94",
+  "version": "1.2.95",
   "description": "",
   "module": "dist/index.js",
   "types": "dist/types/index.d.ts",
