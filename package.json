@@ -1,7 +1,7 @@
 {
   "name": "planz-uikit-mj",
   "sideEffects": false,
-  "version": "1.2.11",
+  "version": "1.2.12",
   "description": "",
   "module": "dist/index.js",
   "types": "dist/types/index.d.ts",
@@ -53,6 +53,7 @@
     "rollup-plugin-commonjs": "^10.1.0",
     "rollup-plugin-node-resolve": "^5.2.0",
     "rollup-plugin-peer-deps-external": "^2.2.2",
+    "rollup-plugin-svg": "^2.0.0",
     "rollup-plugin-url": "^3.0.1",
     "ts-jest": "^26.0.0",
     "typescript": "^3.9.3",
