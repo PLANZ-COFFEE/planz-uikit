@@ -1,7 +1,7 @@
 {
-  "name": "planz-uikit",
+  "name": "planz-uikit-hj",
   "sideEffects": false,
-  "version": "1.2.2",
+  "version": "1.2.3",
   "description": "",
   "module": "dist/index.js",
   "types": "dist/types/index.d.ts",
@@ -64,7 +64,7 @@
     "build": "rollup -c",
     "build:types": "tsc --emitDeclarationOnly",
     "test": "jest --watchAll --verbose",
-    "pre-build-autoExportScripts": "node autoExportScripts/autoExportScript.js"
+    "pre-build-autoExportScripts": "node ./node_modules/react-component-svg-auto-export"
   },
   "peerDependencies": {
     "@emotion/core": "^10.0.28",
