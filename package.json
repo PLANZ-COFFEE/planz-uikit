@@ -1,11 +1,13 @@
 {
   "name": "planz-uikit-hj",
   "sideEffects": false,
-  "version": "1.2.92",
+  "version": "1.2.93",
   "description": "",
   "module": "dist/index.js",
   "types": "dist/types/index.d.ts",
-  "files": [],
+  "files": [
+    "/dist"
+  ],
   "repository": "https://github.com/planzcoffee/planz-uikit.git",
   "keywords": [],
   "author": "",
