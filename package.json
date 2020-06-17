@@ -1,20 +1,18 @@
 {
   "name": "planz-uikit-hj",
   "sideEffects": false,
-  "version": "1.2.6",
+  "version": "1.2.7",
   "description": "",
   "module": "dist/index.js",
   "types": "dist/types/index.d.ts",
-  "files": [
-    "/dist",
-    "/src/common",
-    "/resources"
-  ],
+  "files": [],
   "repository": "https://github.com/planzcoffee/planz-uikit.git",
   "keywords": [],
   "author": "",
   "license": "MIT",
-  "dependencies": {},
+  "dependencies": {
+    "react-component-svg-auto-export": "^1.0.5"
+  },
   "devDependencies": {
     "@babel/core": "^7.9.6",
     "@rollup/plugin-image": "^2.0.5",
@@ -41,6 +39,7 @@
     "eslint-config-prettier": "^6.11.0",
     "eslint-plugin-prettier": "^3.1.3",
     "eslint-plugin-react": "^7.20.0",
+    "file-loader": "^6.0.0",
     "husky": ">=4",
     "jest": "25.5.4",
     "lint-staged": ">=10",
@@ -55,6 +54,7 @@
     "rollup-plugin-url": "^3.0.1",
     "ts-jest": "^26.0.0",
     "typescript": "^3.9.3",
+    "url-loader": "^4.1.0",
     "webpack-bundle-analyzer": "^3.8.0"
   },
   "scripts": {
