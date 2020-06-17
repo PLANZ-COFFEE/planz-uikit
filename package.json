@@ -1,7 +1,7 @@
 {
-  "name": "planz-uikit",
+  "name": "planz-uikit-mj",
   "sideEffects": false,
-  "version": "1.2.2",
+  "version": "1.2.3",
   "description": "",
   "module": "dist/index.js",
   "types": "dist/types/index.d.ts",
@@ -12,7 +12,9 @@
   "keywords": [],
   "author": "",
   "license": "MIT",
-  "dependencies": {},
+  "dependencies": {
+    "react-component-svg-auto-export": "^1.0.5"
+  },
   "devDependencies": {
     "@babel/core": "^7.9.6",
     "@rollup/plugin-image": "^2.0.5",
@@ -39,6 +41,7 @@
     "eslint-config-prettier": "^6.11.0",
     "eslint-plugin-prettier": "^3.1.3",
     "eslint-plugin-react": "^7.20.0",
+    "file-loader": "^6.0.0",
     "husky": ">=4",
     "jest": "25.5.4",
     "lint-staged": ">=10",
@@ -56,12 +59,13 @@
     "webpack-bundle-analyzer": "^3.8.0"
   },
   "scripts": {
-    "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook",
+    "storybook": "yarn pre-build-autoExportScripts && start-storybook -p 6006",
+    "build-storybook": "yarn pre-build-autoExportScripts && build-storybook",
     "lint": "eslint 'src/**/*.{js,ts,tsx}' --quiet --fix",
     "build": "rollup -c",
     "build:types": "tsc --emitDeclarationOnly",
-    "test": "jest --watchAll --verbose"
+    "test": "jest --watchAll --verbose",
+    "pre-build-autoExportScripts": "node ./node_modules/react-component-svg-auto-export"
   },
   "peerDependencies": {
     "@emotion/core": "^10.0.28",
@@ -74,6 +78,8 @@
     }
   },
   "lint-staged": {
-    "*.{js,ts,tsx}": []
+    "*.{js,ts,tsx}": [
+      "eslint --fix"
+    ]
   }
 }
