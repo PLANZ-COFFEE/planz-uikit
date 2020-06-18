@@ -4,7 +4,8 @@ import { withKnobs, text } from '@storybook/addon-knobs';
 
 // 내부모듈
 import LogoBlack from './LogoBlack';
-import { LOGO_WIDTH } from 'constants';
+// import { LOGO_WIDTH } from 'constants';
+import { LOGO_WIDTH } from '@/common/constants.tsx';
 
 export default {
   title: 'component|LogoBlack',

@@ -3,20 +3,23 @@
 import { jsx, css } from '@emotion/core';
 
 // internal modules
-import { LOGO_WIDTH } from 'constants';
+import logoWhite from '@/img/logo_white.png';
 
 /** 화이트 로고 props */
 export type LogoWhiteProps = {
-  logo: string;
+  width: string;
 };
 
 /** LogoWhite 컴포넌트 */
-const LogoWhite = ({ logo }: LogoWhiteProps): JSX.Element => {
-  return <img src={logo} css={logoSize} />;
+const LogoWhite = ({ width }: LogoWhiteProps): JSX.Element => {
+  return (
+    <img
+      src={logoWhite}
+      css={css`
+        width: ${width};
+      `}
+    />
+  );
 };
-
-const logoSize = css`
-  width: ${LOGO_WIDTH};
-`;
 
 export default LogoWhite;

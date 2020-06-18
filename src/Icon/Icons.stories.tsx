@@ -71,7 +71,7 @@ import icons, {
   cornerUpLeft,
   cornerUpRight,
   facebook,
-} from '@/icons';
+} from '@/icons/index.ts';
 import SVGIcon from './Icon';
 
 export default {

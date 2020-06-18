@@ -1,11 +1,12 @@
 // external moudles
 /** @jsx jsx */
-import { jsx } from '@emotion/core';
+import { jsx, css } from '@emotion/core';
 import React from 'react';
 
 /**  SVGIcon props */
 type SVGprops = {
   color?: string;
+  storyColor?: string;
   component: React.ElementType;
 };
 

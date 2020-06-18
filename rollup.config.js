@@ -7,6 +7,7 @@ import svgr from '@svgr/rollup';
 import url from 'rollup-plugin-url';
 import peerDepsExternal from 'rollup-plugin-peer-deps-external';
 import image from '@rollup/plugin-image';
+import alias from 'rollup-plugin-alias';
 
 const extensions = ['.js', '.jsx', '.ts', '.tsx'];
 
@@ -15,15 +16,21 @@ process.env.BABEL_ENV = 'production';
 export default {
   input: './src/index.ts',
   plugins: [
-    peerDepsExternal(),
+    alias({
+      resolve: ['.svg', '.png', ...extensions],
+      entries: {
+        '@': 'resources',
+      },
+    }),
     resolve({ extensions }),
+    babel({ extensions, include: ['src/**/*'], runtimeHelpers: true }),
     commonjs({
       include: 'node_modules/**',
     }),
-    babel({ extensions, include: ['src/**/*'], runtimeHelpers: true }),
-    url(),
     svgr(),
     image(),
+    url(),
+    peerDepsExternal(),
   ],
   output: [
     {
