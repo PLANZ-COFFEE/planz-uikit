@@ -80,400 +80,400 @@ export default {
   decorators: [withKnobs],
 };
 
-export const AlertCircle = (): JSX.Element => {
-  const color = text('color', undefined);
+export const AlertCircle = (color?: string): JSX.Element => {
+  const userColor = text('userColor', undefined);
 
-  return <SVGIcon component={alertCircle} color={color} />;
+  return <SVGIcon component={alertCircle} userColor={userColor} color={color} />;
 };
 
-export const AlertOctagon = (): JSX.Element => {
-  const color = text('color', undefined);
+export const AlertOctagon = (color?: string): JSX.Element => {
+  const userColor = text('userColor', undefined);
 
-  return <SVGIcon component={alertOctagon} color={color} />;
+  return <SVGIcon component={alertOctagon} userColor={userColor} color={color} />;
 };
 
-export const AlertTriangle = (): JSX.Element => {
-  const color = text('color', undefined);
+export const AlertTriangle = (color?: string): JSX.Element => {
+  const userColor = text('userColor', undefined);
 
-  return <SVGIcon component={alertTriangle} color={color} />;
+  return <SVGIcon component={alertTriangle} userColor={userColor} color={color} />;
 };
 
-export const AlignCenter = (): JSX.Element => {
-  const color = text('color', undefined);
+export const AlignCenter = (color?: string): JSX.Element => {
+  const userColor = text('userColor', undefined);
 
-  return <SVGIcon component={alignCenter} color={color} />;
+  return <SVGIcon component={alignCenter} userColor={userColor} color={color} />;
 };
 
-export const AlignJustify = (): JSX.Element => {
-  const color = text('color', undefined);
+export const AlignJustify = (color?: string): JSX.Element => {
+  const userColor = text('userColor', undefined);
 
-  return <SVGIcon component={alignJustify} color={color} />;
+  return <SVGIcon component={alignJustify} userColor={userColor} color={color} />;
 };
 
-export const AlignLeft = (): JSX.Element => {
-  const color = text('color', undefined);
+export const AlignLeft = (color?: string): JSX.Element => {
+  const userColor = text('userColor', undefined);
 
-  return <SVGIcon component={alignLeft} color={color} />;
+  return <SVGIcon component={alignLeft} userColor={userColor} color={color} />;
 };
 
-export const AlignRight = (): JSX.Element => {
-  const color = text('color', undefined);
+export const AlignRight = (color?: string): JSX.Element => {
+  const userColor = text('userColor', undefined);
 
-  return <SVGIcon component={alignRight} color={color} />;
+  return <SVGIcon component={alignRight} userColor={userColor} color={color} />;
 };
 
-export const Anchor = (): JSX.Element => {
-  const color = text('color', undefined);
+export const Anchor = (color?: string): JSX.Element => {
+  const userColor = text('userColor', undefined);
 
-  return <SVGIcon component={anchor} color={color} />;
+  return <SVGIcon component={anchor} userColor={userColor} color={color} />;
 };
 
-export const Aperture = (): JSX.Element => {
-  const color = text('color', undefined);
+export const Aperture = (color?: string): JSX.Element => {
+  const userColor = text('userColor', undefined);
 
-  return <SVGIcon component={aperture} color={color} />;
+  return <SVGIcon component={aperture} userColor={userColor} color={color} />;
 };
 
-export const Archive = (): JSX.Element => {
-  const color = text('color', undefined);
+export const Archive = (color?: string): JSX.Element => {
+  const userColor = text('userColor', undefined);
 
-  return <SVGIcon component={archive} color={color} />;
+  return <SVGIcon component={archive} userColor={userColor} color={color} />;
 };
 
-export const ArrowDown = (): JSX.Element => {
-  const color = text('color', undefined);
+export const ArrowDown = (color?: string): JSX.Element => {
+  const userColor = text('userColor', undefined);
 
-  return <SVGIcon component={arrowDown} color={color} />;
+  return <SVGIcon component={arrowDown} userColor={userColor} color={color} />;
 };
 
-export const ArrowDownCircle = (): JSX.Element => {
-  const color = text('color', undefined);
+export const ArrowDownCircle = (color?: string): JSX.Element => {
+  const userColor = text('userColor', undefined);
 
-  return <SVGIcon component={arrowDownCircle} color={color} />;
+  return <SVGIcon component={arrowDownCircle} userColor={userColor} color={color} />;
 };
 
-export const ArrowDownLeft = (): JSX.Element => {
-  const color = text('color', undefined);
+export const ArrowDownLeft = (color?: string): JSX.Element => {
+  const userColor = text('userColor', undefined);
 
-  return <SVGIcon component={arrowDownLeft} color={color} />;
+  return <SVGIcon component={arrowDownLeft} userColor={userColor} color={color} />;
 };
 
-export const ArrowDownRight = (): JSX.Element => {
-  const color = text('color', undefined);
+export const ArrowDownRight = (color?: string): JSX.Element => {
+  const userColor = text('userColor', undefined);
 
-  return <SVGIcon component={arrowDownRight} color={color} />;
+  return <SVGIcon component={arrowDownRight} userColor={userColor} color={color} />;
 };
 
-export const ArrowLeft = (): JSX.Element => {
-  const color = text('color', undefined);
+export const ArrowLeft = (color?: string): JSX.Element => {
+  const userColor = text('userColor', undefined);
 
-  return <SVGIcon component={arrowLeft} color={color} />;
+  return <SVGIcon component={arrowLeft} userColor={userColor} color={color} />;
 };
 
-export const ArrowLeftCircle = (): JSX.Element => {
-  const color = text('color', undefined);
+export const ArrowLeftCircle = (color?: string): JSX.Element => {
+  const userColor = text('userColor', undefined);
 
-  return <SVGIcon component={arrowLeftCircle} color={color} />;
+  return <SVGIcon component={arrowLeftCircle} userColor={userColor} color={color} />;
 };
 
-export const ArrowRight = (): JSX.Element => {
-  const color = text('color', undefined);
+export const ArrowRight = (color?: string): JSX.Element => {
+  const userColor = text('userColor', undefined);
 
-  return <SVGIcon component={arrowRight} color={color} />;
+  return <SVGIcon component={arrowRight} userColor={userColor} color={color} />;
 };
 
-export const ArrowRightCircle = (): JSX.Element => {
-  const color = text('color', undefined);
+export const ArrowRightCircle = (color?: string): JSX.Element => {
+  const userColor = text('userColor', undefined);
 
-  return <SVGIcon component={arrowRightCircle} color={color} />;
+  return <SVGIcon component={arrowRightCircle} userColor={userColor} color={color} />;
 };
 
-export const ArrowUp = (): JSX.Element => {
-  const color = text('color', undefined);
+export const ArrowUp = (color?: string): JSX.Element => {
+  const userColor = text('userColor', undefined);
 
-  return <SVGIcon component={arrowUp} color={color} />;
+  return <SVGIcon component={arrowUp} userColor={userColor} color={color} />;
 };
 
-export const ArrowUpCircle = (): JSX.Element => {
-  const color = text('color', undefined);
+export const ArrowUpCircle = (color?: string): JSX.Element => {
+  const userColor = text('userColor', undefined);
 
-  return <SVGIcon component={arrowUpCircle} color={color} />;
+  return <SVGIcon component={arrowUpCircle} userColor={userColor} color={color} />;
 };
 
-export const ArrowUpLeft = (): JSX.Element => {
-  const color = text('color', undefined);
+export const ArrowUpLeft = (color?: string): JSX.Element => {
+  const userColor = text('userColor', undefined);
 
-  return <SVGIcon component={arrowUpLeft} color={color} />;
+  return <SVGIcon component={arrowUpLeft} userColor={userColor} color={color} />;
 };
 
-export const ArrowUpRight = (): JSX.Element => {
-  const color = text('color', undefined);
+export const ArrowUpRight = (color?: string): JSX.Element => {
+  const userColor = text('userColor', undefined);
 
-  return <SVGIcon component={arrowUpRight} color={color} />;
+  return <SVGIcon component={arrowUpRight} userColor={userColor} color={color} />;
 };
 
-export const AtSign = (): JSX.Element => {
-  const color = text('color', undefined);
+export const AtSign = (color?: string): JSX.Element => {
+  const userColor = text('userColor', undefined);
 
-  return <SVGIcon component={atSign} color={color} />;
+  return <SVGIcon component={atSign} userColor={userColor} color={color} />;
 };
 
-export const Bell = (): JSX.Element => {
-  const color = text('color', undefined);
+export const Bell = (color?: string): JSX.Element => {
+  const userColor = text('userColor', undefined);
 
-  return <SVGIcon component={bell} color={color} />;
+  return <SVGIcon component={bell} userColor={userColor} color={color} />;
 };
 
-export const BellOff = (): JSX.Element => {
-  const color = text('color', undefined);
+export const BellOff = (color?: string): JSX.Element => {
+  const userColor = text('userColor', undefined);
 
-  return <SVGIcon component={bellOff} color={color} />;
+  return <SVGIcon component={bellOff} userColor={userColor} color={color} />;
 };
 
-export const Bluetooth = (): JSX.Element => {
-  const color = text('color', undefined);
+export const Bluetooth = (color?: string): JSX.Element => {
+  const userColor = text('userColor', undefined);
 
-  return <SVGIcon component={bluetooth} color={color} />;
+  return <SVGIcon component={bluetooth} userColor={userColor} color={color} />;
 };
 
-export const Bold = (): JSX.Element => {
-  const color = text('color', undefined);
+export const Bold = (color?: string): JSX.Element => {
+  const userColor = text('userColor', undefined);
 
-  return <SVGIcon component={bold} color={color} />;
+  return <SVGIcon component={bold} userColor={userColor} color={color} />;
 };
 
-export const Book = (): JSX.Element => {
-  const color = text('color', undefined);
+export const Book = (color?: string): JSX.Element => {
+  const userColor = text('userColor', undefined);
 
-  return <SVGIcon component={book} color={color} />;
+  return <SVGIcon component={book} userColor={userColor} color={color} />;
 };
 
-export const Bookmark = (): JSX.Element => {
-  const color = text('color', undefined);
+export const Bookmark = (color?: string): JSX.Element => {
+  const userColor = text('userColor', undefined);
 
-  return <SVGIcon component={bookmark} color={color} />;
+  return <SVGIcon component={bookmark} userColor={userColor} color={color} />;
 };
 
-export const BookOpen = (): JSX.Element => {
-  const color = text('color', undefined);
+export const BookOpen = (color?: string): JSX.Element => {
+  const userColor = text('userColor', undefined);
 
-  return <SVGIcon component={bookOpen} color={color} />;
+  return <SVGIcon component={bookOpen} userColor={userColor} color={color} />;
 };
 
-export const Box = (): JSX.Element => {
-  const color = text('color', undefined);
+export const Box = (color?: string): JSX.Element => {
+  const userColor = text('userColor', undefined);
 
-  return <SVGIcon component={box} color={color} />;
+  return <SVGIcon component={box} userColor={userColor} color={color} />;
 };
 
-export const Briefcase = (): JSX.Element => {
-  const color = text('color', undefined);
+export const Briefcase = (color?: string): JSX.Element => {
+  const userColor = text('userColor', undefined);
 
-  return <SVGIcon component={briefcase} color={color} />;
+  return <SVGIcon component={briefcase} userColor={userColor} color={color} />;
 };
 
-export const Calendar = (): JSX.Element => {
-  const color = text('color', undefined);
+export const Calendar = (color?: string): JSX.Element => {
+  const userColor = text('userColor', undefined);
 
-  return <SVGIcon component={calendar} color={color} />;
+  return <SVGIcon component={calendar} userColor={userColor} color={color} />;
 };
 
-export const Camera = (my?: string): JSX.Element => {
-  const color = text('color', undefined);
+export const Camera = (color?: string): JSX.Element => {
+  const userColor = text('userColor', undefined);
 
-  return <SVGIcon component={camera} color={color} my={my} />;
+  return <SVGIcon component={camera} userColor={userColor} color={color} />;
 };
 
-export const CameraOff = () => {
-  const color = text('color', undefined);
+export const CameraOff = (color?: string) => {
+  const userColor = text('userColor', undefined);
 
-  return <SVGIcon component={cameraOff} color={color} />;
+  return <SVGIcon component={cameraOff} userColor={userColor} color={color} />;
 };
 
 export const Cast = (color?: string) => {
-  color = text('color', undefined);
+  const userColor = text('userColor', undefined);
 
-  return <SVGIcon component={cast} color={color} />;
+  return <SVGIcon component={cast} userColor={userColor} color={color} />;
 };
 
-export const Check = () => {
-  const color = text('color', undefined);
+export const Check = (color?: string) => {
+  const userColor = text('userColor', undefined);
 
-  return <SVGIcon component={check} color={color} />;
+  return <SVGIcon component={check} userColor={userColor} color={color} />;
 };
 
-export const CheckCircle = () => {
-  const color = text('color', undefined);
+export const CheckCircle = (color?: string) => {
+  const userColor = text('userColor', undefined);
 
-  return <SVGIcon component={checkCircle} color={color} />;
+  return <SVGIcon component={checkCircle} userColor={userColor} color={color} />;
 };
 
-export const CheckSquare = () => {
-  const color = text('color', undefined);
+export const CheckSquare = (color?: string) => {
+  const userColor = text('userColor', undefined);
 
-  return <SVGIcon component={checkSquare} color={color} />;
+  return <SVGIcon component={checkSquare} userColor={userColor} color={color} />;
 };
 
-export const ChevronDown = () => {
-  const color = text('color', undefined);
+export const ChevronDown = (color?: string) => {
+  const userColor = text('userColor', undefined);
 
-  return <SVGIcon component={chevronDown} color={color} />;
+  return <SVGIcon component={chevronDown} userColor={userColor} color={color} />;
 };
 
-export const ChevronLeft = () => {
-  const color = text('color', undefined);
+export const ChevronLeft = (color?: string) => {
+  const userColor = text('userColor', undefined);
 
-  return <SVGIcon component={chevronLeft} color={color} />;
+  return <SVGIcon component={chevronLeft} userColor={userColor} color={color} />;
 };
 
-export const ChevronRight = () => {
-  const color = text('color', undefined);
+export const ChevronRight = (color?: string) => {
+  const userColor = text('userColor', undefined);
 
-  return <SVGIcon component={chevronRight} color={color} />;
+  return <SVGIcon component={chevronRight} userColor={userColor} color={color} />;
 };
 
-export const ChevronUp = () => {
-  const color = text('color', undefined);
+export const ChevronUp = (color?: string) => {
+  const userColor = text('userColor', undefined);
 
-  return <SVGIcon component={chevronUp} color={color} />;
+  return <SVGIcon component={chevronUp} userColor={userColor} color={color} />;
 };
 
-export const ChevronsDown = () => {
-  const color = text('color', undefined);
+export const ChevronsDown = (color?: string) => {
+  const userColor = text('userColor', undefined);
 
-  return <SVGIcon component={chevronsDown} color={color} />;
+  return <SVGIcon component={chevronsDown} userColor={userColor} color={color} />;
 };
 
-export const ChevronsLeft = () => {
-  const color = text('color', undefined);
+export const ChevronsLeft = (color?: string) => {
+  const userColor = text('userColor', undefined);
 
-  return <SVGIcon component={chevronsLeft} color={color} />;
+  return <SVGIcon component={chevronsLeft} userColor={userColor} color={color} />;
 };
 
-export const ChevronsRight = () => {
-  const color = text('color', undefined);
+export const ChevronsRight = (color?: string) => {
+  const userColor = text('userColor', undefined);
 
-  return <SVGIcon component={chevronsRight} color={color} />;
+  return <SVGIcon component={chevronsRight} userColor={userColor} color={color} />;
 };
 
-export const ChevronsUp = () => {
-  const color = text('color', undefined);
+export const ChevronsUp = (color?: string) => {
+  const userColor = text('userColor', undefined);
 
-  return <SVGIcon component={chevronsUp} color={color} />;
+  return <SVGIcon component={chevronsUp} userColor={userColor} color={color} />;
 };
 
-export const Chrome = () => {
-  const color = text('color', undefined);
+export const Chrome = (color?: string) => {
+  const userColor = text('userColor', undefined);
 
-  return <SVGIcon component={chrome} color={color} />;
+  return <SVGIcon component={chrome} userColor={userColor} color={color} />;
 };
 
-export const Circle = () => {
-  const color = text('color', undefined);
+export const Circle = (color?: string) => {
+  const userColor = text('userColor', undefined);
 
-  return <SVGIcon component={circle} color={color} />;
+  return <SVGIcon component={circle} userColor={userColor} color={color} />;
 };
 
-export const Clipboard = () => {
-  const color = text('color', undefined);
+export const Clipboard = (color?: string) => {
+  const userColor = text('userColor', undefined);
 
-  return <SVGIcon component={clipboard} color={color} />;
+  return <SVGIcon component={clipboard} userColor={userColor} color={color} />;
 };
 
-export const Clock = () => {
-  const color = text('color', undefined);
+export const Clock = (color?: string) => {
+  const userColor = text('userColor', undefined);
 
-  return <SVGIcon component={clock} color={color} />;
+  return <SVGIcon component={clock} userColor={userColor} color={color} />;
 };
 
-export const Cloud = () => {
-  const color = text('color', undefined);
+export const Cloud = (color?: string) => {
+  const userColor = text('userColor', undefined);
 
-  return <SVGIcon component={cloud} color={color} />;
+  return <SVGIcon component={cloud} userColor={userColor} color={color} />;
 };
 
-export const CloudDrizzle = () => {
-  const color = text('color', undefined);
+export const CloudDrizzle = (color?: string) => {
+  const userColor = text('userColor', undefined);
 
-  return <SVGIcon component={cloudDrizzle} color={color} />;
+  return <SVGIcon component={cloudDrizzle} userColor={userColor} color={color} />;
 };
 
-export const CloudLightning = () => {
-  const color = text('color', undefined);
+export const CloudLightning = (color?: string) => {
+  const userColor = text('userColor', undefined);
 
-  return <SVGIcon component={cloudLightning} color={color} />;
+  return <SVGIcon component={cloudLightning} userColor={userColor} color={color} />;
 };
 
-export const CloudOff = () => {
-  const color = text('color', undefined);
+export const CloudOff = (color?: string) => {
+  const userColor = text('userColor', undefined);
 
-  return <SVGIcon component={cloudOff} color={color} />;
+  return <SVGIcon component={cloudOff} userColor={userColor} color={color} />;
 };
 
-export const CloudRain = () => {
-  const color = text('color', undefined);
+export const CloudRain = (color?: string) => {
+  const userColor = text('userColor', undefined);
 
-  return <SVGIcon component={cloudRain} color={color} />;
+  return <SVGIcon component={cloudRain} userColor={userColor} color={color} />;
 };
 
-export const CloudSnow = () => {
-  const color = text('color', undefined);
+export const CloudSnow = (color?: string) => {
+  const userColor = text('userColor', undefined);
 
-  return <SVGIcon component={cloudSnow} color={color} />;
+  return <SVGIcon component={cloudSnow} userColor={userColor} color={color} />;
 };
 
-export const CornerDownLeft = () => {
-  const color = text('color', undefined);
+export const CornerDownLeft = (color?: string) => {
+  const userColor = text('userColor', undefined);
 
-  return <SVGIcon component={cornerDownLeft} color={color} />;
+  return <SVGIcon component={cornerDownLeft} userColor={userColor} color={color} />;
 };
 
-export const CornerDownRight = () => {
-  const color = text('color', undefined);
+export const CornerDownRight = (color?: string) => {
+  const userColor = text('userColor', undefined);
 
-  return <SVGIcon component={cornerDownRight} color={color} />;
+  return <SVGIcon component={cornerDownRight} userColor={userColor} color={color} />;
 };
 
-export const CornerLeftDown = () => {
-  const color = text('color', undefined);
+export const CornerLeftDown = (color?: string) => {
+  const userColor = text('userColor', undefined);
 
-  return <SVGIcon component={cornerLeftDown} color={color} />;
+  return <SVGIcon component={cornerLeftDown} userColor={userColor} color={color} />;
 };
 
-export const CornerLeftUp = () => {
-  const color = text('color', undefined);
+export const CornerLeftUp = (color?: string) => {
+  const userColor = text('userColor', undefined);
 
-  return <SVGIcon component={cornerLeftUp} color={color} />;
+  return <SVGIcon component={cornerLeftUp} userColor={userColor} color={color} />;
 };
 
-export const CornerRightDown = () => {
-  const color = text('color', undefined);
+export const CornerRightDown = (color?: string) => {
+  const userColor = text('userColor', undefined);
 
-  return <SVGIcon component={cornerRightDown} color={color} />;
+  return <SVGIcon component={cornerRightDown} userColor={userColor} color={color} />;
 };
 
-export const CornerRightUp = () => {
-  const color = text('color', undefined);
+export const CornerRightUp = (color?: string) => {
+  const userColor = text('userColor', undefined);
 
-  return <SVGIcon component={cornerRightUp} color={color} />;
+  return <SVGIcon component={cornerRightUp} userColor={userColor} color={color} />;
 };
 
-export const CornerUpLeft = () => {
-  const color = text('color', undefined);
+export const CornerUpLeft = (color?: string) => {
+  const userColor = text('userColor', undefined);
 
-  return <SVGIcon component={cornerUpLeft} color={color} />;
+  return <SVGIcon component={cornerUpLeft} userColor={userColor} color={color} />;
 };
 
-export const CornerUpRight = () => {
-  const color = text('color', undefined);
+export const CornerUpRight = (color?: string) => {
+  const userColor = text('userColor', undefined);
 
-  return <SVGIcon component={cornerUpRight} color={color} />;
+  return <SVGIcon component={cornerUpRight} userColor={userColor} color={color} />;
 };
 
-export const Facebook = () => {
-  const color = text('color', undefined);
+export const Facebook = (color?: string) => {
+  const userColor = text('userColor', undefined);
 
-  return <SVGIcon component={facebook} color={color} />;
+  return <SVGIcon component={facebook} userColor={userColor} color={color} />;
 };
 
 // list of icons

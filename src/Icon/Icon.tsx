@@ -5,30 +5,31 @@ import React from 'react';
 
 /**  SVGIcon props */
 type SVGprops = {
-  my?: string;
   color?: string;
+  userColor?: string;
   component: React.ElementType;
 };
 
 /**  SVGIcon */
 const SVGIcon: React.FunctionComponent<SVGprops> = React.forwardRef((props, ref) => {
-  const { children, color, component: Component = 'svg' } = props;
-  let my = props.my;
+  const { children, userColor, component: Component = 'svg' } = props;
+  let color = props.color;
 
-  console.log('co', color);
-  console.log('my', my);
-  console.log('type my', typeof my);
+  console.log('co', userColor);
+  console.log('color', color);
+  console.log('type color', typeof color);
 
-  if (typeof my === 'object') {
-    my = my.my;
-    console.log('fin my', my);
+  // code for library (to get a real color from the color object)
+  if (typeof color === 'object') {
+    color = color.color;
+    console.log('fin color', color);
   }
 
   return (
     <Component
-      color={color}
+      color={userColor}
       css={css`
-        color: ${my};
+        color: ${color};
       `}
       ref={ref}
     >
