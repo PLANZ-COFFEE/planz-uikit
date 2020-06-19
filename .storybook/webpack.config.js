@@ -41,7 +41,7 @@ module.exports = ({ config, mode }) => {
   config.resolve.extensions.push('.ts', '.tsx');
   config.plugins.push(
     new BundleAnalyzerPlugin({
-      openAnalyzer: true,
+      // openAnalyzer: true,
     }),
     new CleanWebpackPlugin(),
   );

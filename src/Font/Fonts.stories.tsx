@@ -1,6 +1,6 @@
 // external modules
 /** @jsx jsx */
-import { jsx } from '@emotion/core';
+import { jsx, css } from '@emotion/core';
 import { text, number, withKnobs } from '@storybook/addon-knobs';
 
 // internal modules
@@ -12,13 +12,21 @@ export default {
   decorators: [withKnobs],
 };
 
-export const contentEn = (): JSX.Element => {
+enum fontTypes {
+  title = 'title',
+  contentEn = 'contentEn',
+  contentKrNum = 'contentkrNum',
+}
+
+export const contentEn = (type: string): JSX.Element => {
   const fontFamily = text('fontFamily', 'Open Sans');
   const lineHeight = number('lineHeight', 1.5);
   const children = text('children', 'Hello, everybody!');
 
+  type = 'contentEn';
+
   return (
-    <Font fontFamily={fontFamily} lineHeight={lineHeight}>
+    <Font fontFamily={fontFamily} lineHeight={lineHeight} type={type}>
       {children}
     </Font>
   );

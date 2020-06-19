@@ -71,7 +71,7 @@ import icons, {
   cornerUpLeft,
   cornerUpRight,
   facebook,
-} from '@/icons';
+} from '@/icons/index.ts';
 import SVGIcon from './Icon';
 
 export default {
@@ -278,10 +278,10 @@ export const Calendar = (): JSX.Element => {
   return <SVGIcon component={calendar} color={color} />;
 };
 
-export const Camera = () => {
+export const Camera = (my?: string): JSX.Element => {
   const color = text('color', undefined);
 
-  return <SVGIcon component={camera} color={color} />;
+  return <SVGIcon component={camera} color={color} my={my} />;
 };
 
 export const CameraOff = () => {
@@ -290,8 +290,8 @@ export const CameraOff = () => {
   return <SVGIcon component={cameraOff} color={color} />;
 };
 
-export const Cast = () => {
-  const color = text('color', undefined);
+export const Cast = (color?: string) => {
+  color = text('color', undefined);
 
   return <SVGIcon component={cast} color={color} />;
 };

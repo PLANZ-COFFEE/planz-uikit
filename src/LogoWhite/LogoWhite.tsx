@@ -3,7 +3,7 @@
 import { jsx, css } from '@emotion/core';
 
 // internal modules
-import { LOGO_WIDTH } from 'constants';
+import { LOGO_WIDTH } from '@/common/constants';
 
 /** 화이트 로고 props */
 export type LogoWhiteProps = {

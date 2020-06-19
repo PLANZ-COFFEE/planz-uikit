@@ -5,7 +5,7 @@ import { text, withKnobs } from '@storybook/addon-knobs';
 
 // internal modules
 import LogoCoralPink from './LogoCoralPink';
-import { LOGO_WIDTH } from 'constants';
+import { LOGO_WIDTH } from '@/common/constants.tsx';
 
 export default {
   title: 'components|LogoCoralPink',
