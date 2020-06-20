@@ -15,8 +15,6 @@ const SVGIcon: React.FunctionComponent<SVGprops> = React.forwardRef((props, ref)
   const { children, userColor, component: Component = 'svg' } = props;
   let color = props.color;
 
-  console.log('test');
-
   // code for library (to get a real color from the color object)
   if (typeof color === 'object') {
     color = color.color;
