@@ -62,7 +62,7 @@
     "webpack-bundle-analyzer": "^3.8.0"
   },
   "scripts": {
-    "storybook": "start-storybook -p 6006",
+    "storybook": "yarn pre-build-autoExportScripts && start-storybook -p 6006",
     "build-storybook": "yarn pre-build-autoExportScripts && build-storybook",
     "lint": "eslint 'src/**/*.{js,ts,tsx}' --quiet --fix",
     "build": "rollup -c",
@@ -81,6 +81,8 @@
     }
   },
   "lint-staged": {
-    "*.{js,ts,tsx}": []
+    "*.{js,ts,tsx}": [
+      "eslint --fix"
+    ]
   }
 }
