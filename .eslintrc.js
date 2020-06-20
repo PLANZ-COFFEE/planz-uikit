@@ -24,8 +24,6 @@ module.exports = {
     '@typescript-eslint/no-use-before-define': ['error', { variables: false }], // emotionjs 스타일을 아래 정의 하기 위해서
     '@typescript-eslint/explicit-function-return-type': 'off',
     indent: ['error', 2, { SwitchCase: 1 }],
-    // indent: ['SwitchCase', 1],
-    // indent: ['error', 2, { SwitchCase: 1 }, { VariableDeclarator: { var: 2, let: 2, const: 3 } }],
     'no-var': 'error',
     'prefer-const': [
       'error',
