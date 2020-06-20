@@ -36,6 +36,7 @@ const Font = ({ type, children, fontFamily, letterSpacing, lineHeight, color, fo
       case 'contentKrNum':
         cssType['font-family'] = 'Spoqa Han Sans';
         cssType['line-height'] = lineHeight || 1.6;
+        cssType['letter-spacing'] = letterSpacing || '-0.32px';
         break;
     }
 
@@ -44,8 +45,9 @@ const Font = ({ type, children, fontFamily, letterSpacing, lineHeight, color, fo
       .join('\n');
 
     return css`
-      @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
-      @import url('https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css');
+      @import url('https://db.onlinewebfonts.com/c/f5511239c72c70ba62b013979a9259c2?family=Times+Sans+Serif'); /* Times Sans Serif */
+      @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap'); /* Open Sans */
+      @import url('https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css'); /* Spoqa Han Sans */
       color: ${color};
       font-size: ${fontSize};
       letter-spacing: ${letterSpacing};
