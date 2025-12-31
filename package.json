@@ -46,7 +46,7 @@
     "eslint-plugin-react": "^7.20.0",
     "file-loader": "^6.0.0",
     "husky": ">=4",
-    "jest": "25.5.4",
+    "jest": "30.2.0",
     "lint-staged": ">=10",
     "puppeteer": "^3.1.0",
     "react-docgen-typescript-loader": "^3.7.2",
